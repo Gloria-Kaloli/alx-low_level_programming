@@ -1,15 +1,14 @@
 #include <stdio.h>
- /**
-  * main - program that prints all single digit numbers
-  * Return: 0 (successful)
-  */
-
+/**
+ * main - A program that prints numbers
+ * Return: 0 (successful)
+ */
 int main(void)
 {
-	int a;
+	int m;
 
-	for (a = 0; a < 10; a++)
-		printf("%d", a);
+	for (m = 0; m < 10; m++)
+		printf("%d", m);
 	putchar('\n');
 	return (0);
 }
