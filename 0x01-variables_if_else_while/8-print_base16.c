@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - program that prints base numbers
+ * main - A program that prints hexadecimal
  * Return: 0 (successful)
  */
 
 int main(void)
 {
-	char s;
+	char r;
 
-	int r;
+	int v;
 
-	s = 'a';
-	r = '0';
+	r = 'a';
+	v = 0;
 	while
-		(r < 10) {
-			putchar(r + '0');
-			r++;
+		(v < 10) {
+			putchar(v + '0');
+			v++;
 		}
 	while
-		(s <= 'f') {
-			putchar(s);
-			s++;
-			}
+		(r <= 'f') {
+			putchar(r);
+			r++;
+		}
 	putchar('\n');
 	return (0);
 }
