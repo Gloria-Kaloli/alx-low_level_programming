@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - program that prints all possible combinations
+ * main - A program that prints all possible combinations
  * Return: 0 (successful)
  */
+
 int main(void)
 {
-	int a;
+	int c;
 
-	for (a = 0; a < 10; a++)
+	for (c = 0; c < 10; c++)
 	{
-		putchar(a + '0');
-		if (a < 9)
+		putchar(c + '0');
+		if (c < 9)
 		{
 			putchar(',');
 			putchar(',');
