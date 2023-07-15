@@ -1,9 +1,9 @@
 #include <stdio.h>
 
- /**
-  * main - program that prints digits
-  * Return: 0 (successful)
-  */
+/**
+ * main - A program that prints different combinations of two digits
+ * Return: 0 (successful)
+ */
 
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 				if (!(ones == '9' && tens == '8'))
 				{
 					putchar(',');
-					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
