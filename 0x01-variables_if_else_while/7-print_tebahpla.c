@@ -1,8 +1,8 @@
 #include <stdio.h>
- /**
-  * main - program that prints alphabets
-  * Retun: 0 (successful)
-  */
+/**
+ * main - A  program that prints numbers
+ * Return: 0 (successful)
+ */
 
 int main(void)
 {
@@ -14,6 +14,6 @@ int main(void)
 			putchar(t);
 			t--;
 		}
-	putchar('\n');
+	putcgar('\n');
 	return (0);
 }
