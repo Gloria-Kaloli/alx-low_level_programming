@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - A program that finds and prints the largest
- *             prime factor of the number 612852475143
+ * main - A program that finds and prints the largest prime factor
  *
- * Return 0 (successful)
+ * Return: 0 (successful)
  */
 
 int main(void)
@@ -21,11 +20,12 @@ int main(void)
 
 		for (divisor = 3; divisor < (prime / 2); divisor += 2)
 		{
-			if (prime % divisor == 0)
+			if ((prime % divisor) == 0)
 				prime /= divisor;
 		}
 	}
-	printf("%1d\n", prime);
+
+	printf("%ld\n", prime);
 
 	return (0);
 }
