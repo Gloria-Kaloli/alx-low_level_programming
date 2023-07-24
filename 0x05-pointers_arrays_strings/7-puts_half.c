@@ -11,19 +11,19 @@
 
 void puts_half(char *str)
 {
-	int p, q, longi;
+	int p, n, longi;
 
 	longi = 0;
 
 	for (p = 0; str[p] != '\0'; p++)
 		longi++;
 
-	q = (longi / 2);
+	n = (longi / 2);
 
 	if ((longi % 2) == 1)
-		q = ((longi + 1) / 2);
+		n = ((longi + 1) / 2);
 
-	for (p = q; str[a] != '\0'; p++)
+	for (p = n; str[a] != '\0'; p++)
 		_putchar(str[p]);
 
 	_putchar('\n');
