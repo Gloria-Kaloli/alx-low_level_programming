@@ -15,19 +15,25 @@ char *str_concat(char *s1, char *s2)
 	int r, sr;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 	r = sr = 0;
 	while (s1[r] != '\0')
 		r++;
 	while (s2[sr] != '\0')
 		sr++;
+
 	conct = malloc(sizeof(char) * (r + sr + 1));
 	if (conct == NULL)
 		return (NULL);
 	r = sr = 0;
 	while (s1[r] != '\0')
+	{
+		conct[r] = s1[r];
+		r++;
+	}
+	while (s2[sr] != '\0')
 	{
 		conct[r] = s2[sr];
 		r++, sr++;
