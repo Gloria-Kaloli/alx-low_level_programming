@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-	char *aaa;
+	char *rrr;
 	int v, w = 0;
 
 	if (str == NULL)
@@ -21,12 +21,12 @@ char *_strdup(char *str)
 	while (str[v] != '\0')
 		v++;
 
-	aaa = malloc(sizeof(char) * (v));
+	rrr = malloc(sizeof(char) * (v + 1));
 
-	if (aaa == NULL)
+	if (rrr == NULL)
 		return (NULL);
 
 	for (w = 0; str[w]; w++)
 		aaa[w] = str[w];
-	return (aaa);
+	return (rrr);
 }
