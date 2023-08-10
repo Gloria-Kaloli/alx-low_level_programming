@@ -26,9 +26,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-		r = malloc(new_size);
+	else if (new_size == old_size)
+		return (ptr);
+	r = malloc(new_size);
 			if (r == NULL)
-
+				return (NULL);
 		if (new_size > old_size)
 			max = old_size;
 		for (a = 0; a < max; a++)
