@@ -2,13 +2,11 @@
 #define DOG_H
 
 /**
-* struct dog - program that shows a dog's basic info
-* @name: name of the dog
-* @age: age of the dog
-* @owner: owner of the dog
-*
-* Return: new type struct dog
-*/
+ * struct dog - Program that shows a dogs class
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ */
 
 struct dog
 {
