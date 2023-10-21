@@ -197,6 +197,7 @@ void print_osabi(unsigned char *e_ident)
  *
  * Return: ABI version of ELF header
  */
+
 void print_abi(unsigned char *e_ident)
 {
 	printf(" ABI Version: %d\n",
